@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #F5F6FD;
+    
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    min-height: 100vh;
+    /* margin: 0; */
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #8978f1;
+}
+
+.container {
+    text-align: center;
+}
+
+
+nav {
+    margin-top: 50px ;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* background-color: white; */
+    /* box-shadow: 3px 3px 5px  rgb(0,0,0,0.1); */
+}
+
+nav ul{
+    width:100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #8978f1;
+    font-weight: bold;
+    font-size:x-large;
+}
+nav a:hover{
+    background-color: #e3e1f1;
+    border-radius: 20px;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #F5F6FD;
+    box-shadow: -10px 0 10px rgba(255, 255, 255, 0.658);
+    backdrop-filter: blur(50px);
+    display: none;
+    flex-direction: column ;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.sidebar a:hover{
+    background-color: #e3e1f1;
+    border-radius: 20px;
+}
+.menu-Button{
+    display: none;
+}
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-Button{
+        display: block;
+    }
+}
+
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+.container{
+    margin-top: 200px;
+}
+h1{
+    
+    font-size:80px;
+    font-weight:bolder;
+    
+    
+}
+
+input{
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 40%;
+    height: 60px;
+    border-color: #8978f1;
+    border-style: double;
+    color: #8978f1;
+    padding-left: 50px;
+    font-size: large;
+}
+input:focus{
+    border-style: double;
+    border-color: #8978f1;
+    outline: none;
+}
+::placeholder{
+    color: #8978f1;
+    opacity: 0.7;
+}
+
+button{
+    color: #8978f1;
+    width: 80px;;
+    height: 62px;
+    border-color: #8978f1;
+    border-style: double;
+    border-radius: 20px;
+    font-size: large;
+}
+button:hover{
+    background-color: #8978f1;
+    color: white;
+}
+
